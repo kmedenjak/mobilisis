@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang='hr'>
+    <head>
+        <title>Registracija</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Naslov" content="Registracija">
+        <meta name="Autor" content="Karla Medenjak">
+        <meta name="Opis" content="Stranica registracije na kojoj se novi korisnik može registrirati, 19.03.2021.">
+        <meta name="Tri ključne riječi" content="Unos, registracija, podaci">
+        <link rel="stylesheet" href="../css/kmedenjak.css" type="text/css"/>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../javascript/kmedenjak_jquery.js"></script>
+    </head>
+    <body>
+        <header style="text-align: center">
+            <a href="https://www.facebook.com/">
+                <img class="slikaPocetna" src="../multimedija/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="slikaPocetna" src="../multimedija/instagram-logo.png" alt="instagram">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/RSS">
+                <img class="slikaPocetna" src="../multimedija/rss-logo.png" alt="rss">
+            </a>
+            <h1><a class="rodendan" href="#sadrzaj"> REGISTRACIJA </a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="navigacijaLi"><a href="../index.html">Početna stranica</a></li>
+                <li class="navigacijaLi"><a href="../autor.html">Autor</a></li>
+                <li class="navigacijaLi"><a href="../navigacijski.html">Navigacijski dijagram</a></li>
+                <li class="navigacijaLi"><a href="../era.html">ERA dijagram</a></li>
+                <li class="navigacijaLi"><a href="../galerija.html">Galerija</a></li>
+                <li class="navigacijaLi"><a href="prijava.html">Prijava</a></li>
+                <li class="navigacijaLi"><a href="obrazac.html">Obrazac</a></li>
+            </ul>
+        </nav>
+
+        <section id="sadrzaj">
+            <h2 class="naslovUSadrzaju">Registracija</h2>
+            <div class="polozajRegistracija">
+                <div class="obrubRegistracija">
+                    <form class="registracijaForma" name="registracija" id="registracija" method="post" action="http://barka.foi.hr/WebDiP/2020/materijali/zadace/ispis_forme.php">
+                        <label for="ime">Ime: </label>
+                        <input class="formaInput" name="ime" id="ime" type="text" placeholder="Ime"/>
+                        <br> <br>
+
+                        <label for="prezime">Prezime: </label>
+                        <input class="formaInput" name="prezime" id="prezime" type="text" placeholder="Prezime"/>
+                        <br> <br>
+
+                        <label for="korisnickoIme">Korisničko ime: </label>
+                        <input class="formaInput" name="korisnickoIme" id="korisnickoIme" type="text" maxlength="15" size="15" />
+                        <br> <br>
+
+                        <label for="eMail">E-mail: </label>
+                        <input class="formaInput" name="eMail" id="eMail" type="email" maxlength="15" size="15" />
+                        <br> <br>    
+
+                        <label for="lozinka">Lozinka: </label>
+                        <input class="formaInput" name="lozinka"  id="lozinka" type="password"/>
+                        <br> <br>
+
+                        <label for="potvrdaLozinke">Potvrda lozinke: </label>
+                        <input class="formaInput" name="potvrdaLozinke"  id="potvrdaLozinke" type="password">
+                        <br> <br>    
+                        
+                        <label for="datumVrijeme">Datum i vrijeme: </label>
+                        <input class="formaInput" name="datumVrijeme"  id="datumVrijeme" type="text">
+                        <br> <br> 
+                        
+                        <input class="gumbReg" id="gumbReg" name="submit" type="submit" value="Prijavi se" />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="podnozje">
+            <address>Kontakt: <a href="../autor.html">Karla Medenjak</a></address>
+            <p>&copy; 2021 K.Medenjak</p>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/obrasci/registracija.html">
+                <img src="../multimedija/CSS3.png" alt="" width="30" height="30">
+            </a>
+            <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/obrasci/registracija.html">
+                <img src="../multimedija/HTML5.png" alt="" width="30" height="30">
+            </a>
+        </footer>
+    </body>
+</html>

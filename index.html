@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang='hr'>
+    <head>
+        <title>Početna stranica</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Naslov" content="Početna stranica">
+        <meta name="Autor" content="Karla Medenjak">
+        <meta name="Opis" content="Početna stranica na kojoj se nalazi tablica, 19.03.2021.">
+        <meta name="Tri ključne riječi" content="Rođendan, tablica, slika">
+        <link rel="stylesheet" href="css/kmedenjak.css" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+        <script src="javascript/kmedenjak_jquery.js"></script>
+    </head>
+
+    <body>
+        <header style="text-align: center">
+            <a href="https://www.facebook.com/">
+                <img class="slikaPocetna" src="multimedija/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="slikaPocetna" src="multimedija/instagram-logo.png" alt="instagram">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/RSS">
+                <img class="slikaPocetna" src="multimedija/rss-logo.png" alt="rss">
+            </a>
+            <h1>
+                <a class="rodendan" href="#sadrzaj"> ROĐENDAN </a>
+            </h1>
+
+        </header>
+
+        <nav>
+            <ul>
+                <li class="navigacijaLi"><a href="autor.html">Autor</a></li>
+                <li class="navigacijaLi"><a href="galerija.html">Galerija</a></li>
+                <li class="navigacijaLi"><a href="navigacijski.html">Navigacijski dijagram</a></li>
+                <li class="navigacijaLi"><a href="era.html">ERA dijagram</a></li>
+                <li class="navigacijaLi"><a href="obrasci/prijava.html">Prijava</a></li>
+                <li class="navigacijaLi"><a href="obrasci/registracija.html">Registracija</a></li>
+                <li class="navigacijaLi"><a href="obrasci/obrazac.html">Obrazac</a></li>
+            </ul>
+
+            <div>
+                <img class="glavnaSlikaPocetna" src="multimedija/Pozadina.jpg" alt="SlikaNaPocetnoj"/>
+            </div>
+        </nav>
+
+        <section id="sadrzaj">
+            <h2 class="naslovUSadrzaju">Početna stranica</h2>
+            <br>
+            <div class="tablica">
+                <table class="tablicaMedia" id="tablica1">
+                    <caption class="naslovTablice" >Tablica obrazaca</caption>
+                    <thead>
+                        <tr>
+                            <th>Datum</th>
+                            <th>Vrijeme</th>
+                            <th>Telefonski broj</th>
+                            <th>Dob</th>
+                            <th>Dodaci</th>
+                            <th>Opis</th>
+                            <th>URL</th>
+                            <th>Boja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>24.03.2021.</td>
+                            <td>16:00</td>
+                            <td>0992451368</td>
+                            <td>7-10</td>
+                            <td>Glumac, torta</td>
+                            <td>Glumac neka bude Elsa</td>
+                            <td>https://frozen.disney.com/elsa</td>
+                            <td>Svijetlo plava</td>
+                        </tr>
+                        <tr>
+                            <td>01.05.2021.</td>
+                            <td>15:00</td>
+                            <td>09154895715</td>
+                            <td>7-10</td>
+                            <td>Trampolin</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Zelena</td>
+                        </tr>
+                        <tr>
+                            <td>08.08.2021.</td>
+                            <td>18:00</td>
+                            <td>099785125</td>
+                            <td>15-18</td>
+                            <td>hrana, glumac</td>
+                            <td>Glumac neka bude Yoda</td>
+                            <td>-</td>
+                            <td>Zelena</td>
+                        </tr>
+                        <tr>
+                            <td>12.07.2021.</td>
+                            <td>17:00</td>
+                            <td>092458962</td>
+                            <td>3-6</td>
+                            <td>Torta, hrana, kostimi</td>
+                            <td>Torta u obliku dvorca i krune za kostime</td>
+                            <td>https://www.wikihow.com/Make-a-Castle-Cake</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>06.05.2021.</td>
+                            <td>16:00</td>
+                            <td>0956231458</td>
+                            <td>18-30</td>
+                            <td>Glumac</td>
+                            <td>Glumac je astronaut</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>28.04.2021.</td>
+                            <td>16:00</td>
+                            <td>098452367</td>
+                            <td>3-6</td>
+                            <td>Kućica na napuhavanje, kostimi</td>
+                            <td>Kostimi prijatelja Spužva Boba</td>
+                            <td>https://spongebob.fandom.com/wiki/Spu%C5%BEva_Bob_Skockani</td>
+                            <td>Žuta</td>
+                        </tr>
+                        <tr>
+                            <td>08.07.2021.</td>
+                            <td>18:00</td>
+                            <td>099852164</td>
+                            <td>3-6</td>
+                            <td>Glumac, kučica na napuhavanje</td>
+                            <td>Glumac neka bude Gru</td>
+                            <td>-</td>
+                            <td>Žuta</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="8">1</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <footer class="podnozje">
+            <address>Kontakt: <a href="autor.html">Karla Medenjak</a></address>
+            <p>&copy; 2021 K.Medenjak</p>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/index.html">
+                <img src="multimedija/CSS3.png" alt="" width="30" height="30">
+            </a>
+            <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/index.html">
+                <img src="multimedija/HTML5.png" alt="" width="30" height="30">
+            </a>
+        </footer>
+    </body>
+</html>

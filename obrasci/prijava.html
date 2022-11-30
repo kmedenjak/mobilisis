@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang='hr'>
+    <head>
+        <title>Prijava</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Naslov" content="Prijava">
+        <meta name="Autor" content="Karla Medenjak">
+        <meta name="Opis" content="Prijava na kojoj se korisnik može prijaviti sa svojim podacima, 19.03.2021.">
+        <meta name="Tri ključne riječi" content="Prijava, korisnički podaci, provjera">
+        <link rel="stylesheet" href="../css/kmedenjak.css" type="text/css"/>
+    </head>
+    <body>
+        <header style="text-align: center">
+            <a href="https://www.facebook.com/">
+                <img class="slikaPocetna" src="../multimedija/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="slikaPocetna" src="../multimedija/instagram-logo.png" alt="instagram">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/RSS">
+                <img class="slikaPocetna" src="../multimedija/rss-logo.png" alt="rss">
+            </a>
+            <h1><a class="rodendan" href="#sadrzajPrijava"> PRIJAVA </a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="navigacijaLi"><a href="../index.html">Početna stranica</a></li>
+                <li class="navigacijaLi"><a href="../autor.html">Autor</a></li>
+                <li class="navigacijaLi"><a href="../navigacijski.html">Navigacijski dijagram</a></li>
+                <li class="navigacijaLi"><a href="../era.html">ERA dijagram</a></li>
+                <li class="navigacijaLi"><a href="../galerija.html">Galerija</a></li>
+                <li class="navigacijaLi"><a href="registracija.html">Registracija</a></li>
+                <li class="navigacijaLi"><a href="obrazac.html">Obrazac</a></li>
+            </ul>
+        </nav>
+
+        <section id="sadrzajPrijava">
+            <h2 class="naslovUSadrzaju"> Prijavite se</h2>
+            <div class="polozajPrijava">
+                <div class="obrubPrijava">
+                    <form class="prijavaForma" name="prijava" id="prijava" method="post" action="http://barka.foi.hr/WebDiP/2020/materijali/zadace/ispis_forme.php">
+
+                        <label for="korisnickoIme">Korisničko ime: </label>
+                        <input class="formaInput" name="korisnickoIme" id="korisnickoIme" type="text" placeholder="Korisničko ime" autofocus required="required" maxlength="15" size="15" />
+                        <br> <br>
+
+                        <label for="lozinka">Lozinka: </label>
+                        <input class="formaInput" name="lozinka"  id="lozinka" type="password" required="required" />
+                        <br> <br>
+
+                        <input class="gumbPrijava" name="submit" type="submit" value="Prijavi se" />
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="podnozje">
+            <address>Kontakt: <a href="../autor.html">Karla Medenjak</a></address>
+            <p>&copy; 2021 K.Medenjak</p>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/obrasci/prijava.html">
+                <img src="../multimedija/CSS3.png" alt="" width="30" height="30">
+            </a>
+            <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/obrasci/prijava.html">
+                <img src="../multimedija/HTML5.png" alt="" width="30" height="30">
+            </a>
+        </footer>
+    </body>
+</html>

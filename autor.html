@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang='hr'>
+    <head>
+        <title>Autor</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Naslov" content="Autor">
+        <meta name="Autor" content="Karla Medenjak">
+        <meta name="Opis" content="Stranica autor koja sadrži osnovne podatke o autoru stranice te tekst, citat i video te je prilagođena disleksiji, 19.03.2021.">
+        <meta name="Tri ključne riječi" content="Podaci, disleksija, video">
+        <link rel="stylesheet" href="css/kmedenjak.css" type="text/css"/>
+        <style>
+            li a{
+                display: block;
+                color: #ccc;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 19px;
+                font-family: Arial;
+                letter-spacing: 1.5px;
+                word-spacing: 28px;
+            }
+
+            li a:hover{
+                background-color: white;
+                color: #333;
+            }
+
+            h1 > a{
+                color: #333;
+                text-decoration: none;
+                font-size: 80px;
+                letter-spacing: 4px;
+            }
+
+            h1 > a:hover{
+                text-decoration: none;
+                background-color: white;
+                color: #333;
+            }
+
+            p{
+                width: 100%;
+                font-size: 19px;
+                font-family: Arial;
+                letter-spacing: 1.5px;
+                word-spacing: 28px;
+                line-height: 30px;
+            }
+
+            h2, h3, h5{
+                font-size: 60px;
+                font-family: Arial;
+                letter-spacing: 8px;
+                word-spacing: 28px;
+                line-height: 30px;
+                color: #333;
+            }
+
+            h4{
+                font-size: 40px;
+                font-family: Arial;
+                letter-spacing: 8px;
+                word-spacing: 28px;
+                line-height: 30px;
+                color: #333;
+            }
+            .tekstObrazac{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                width: 100%;
+                height: 20%;
+                background-color: white;
+            }
+
+            .tekstObrazac2{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                padding: 10px;
+                width: 100%;
+                height: 20%;
+                background-color: white;
+            }
+
+            .tekstObrazac3{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                padding: 10px;
+                width: 100%;
+                height: 20%;
+                background-color: white;
+            }
+
+            p{
+                color:black;
+                width: 100%;
+            }
+
+            .autorPodloga{
+                width: 100%;
+                height: 100%;
+                background-color: #f1f1f1;
+            }
+
+            .podnozje{
+                background-color: #ccc;
+                color: #333;
+            }
+
+            @media only screen and (min-width: 364px) and (max-width: 1400px){
+                .rodendan{
+                    width: 100%;
+                    color: #333;
+                    text-decoration: none;
+                    font-family: Comic Sans;
+                }
+
+                .rodendan:hover{
+                    background-color: white;
+                    color: #93af85;
+                }
+
+                nav > ul li {
+                    width: 100%;
+                    background-color: #ccc;
+                    color: #333;
+                }
+                .navigacijaLi >  a {
+                    display: block;
+                    text-align: center;
+                    background-color: #ccc;
+                    color: #333;
+                    font-family: Comic Sans;
+                }
+
+                .navigacijaLi > a:hover{
+                    background-color: #333;
+                    color: white;
+                }
+
+                p{
+                    font-family: Comic Sans;
+                }
+
+                .autorPodloga{
+                    background-color: white;
+                }
+
+                .tekstObrazac, .tekstObrazac2, .tekstObrazac3{
+                    background-color: #f1f1f1;
+                    color: black;
+                }
+
+                h4{
+                    color: #333;
+                }
+
+                .podnozje{
+                    background-color: #f1f1f1;
+                    color: #333;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header style="text-align: center">
+            <a href="https://www.facebook.com/">
+                <img class="slikaPocetna" src="multimedija/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="slikaPocetna" src="multimedija/instagram-logo.png" alt="instagram">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/RSS">
+                <img class="slikaPocetna" src="multimedija/rss-logo.png" alt="rss">
+            </a>
+            <h1><a class="rodendan" href="#sadrzaj"> AUTOR </a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="navigacijaLi"><a href="index.html">POČETNA STRANICA</a></li>
+                <li class="navigacijaLi"><a href="galerija.html">GALERIJA</a></li>
+                <li class="navigacijaLi"><a href="navigacijski.html">Navigacijski dijagram</a></li>
+                <li class="navigacijaLi"><a href="era.html">ERA dijagram</a></li>
+                <li class="navigacijaLi"><a href="obrasci/prijava.html">PRIJAVA</a></li>
+                <li class="navigacijaLi"><a href="obrasci/registracija.html">REGISTRACIJA</a></li>
+                <li class="navigacijaLi"><a href="obrasci/obrazac.html">OBRAZAC</a></li>
+            </ul>
+        </nav>
+
+        <section id="sadrzaj">
+            <div class="autorPodloga"> <br>
+
+                <br>
+                <h2 class="naslovUSadrzaju">Autor</h2>
+                <br>
+                <div class="tekstObrazac">
+                    <div style="float:left">                    
+                        <p class="autor">Ime: Karla</p> 
+                        <p class="autor">Prezime: Medenjak</p> 
+                        <p class="autor">E-mail: <a href="mailto:kmedenjak@foi.hr">kmedenjak@foi.hr</a> </p>
+                    </div>
+                    <div style="float:right; margin-left:5%">  
+                        <img src="multimedija/ja.jpg" alt='moja_slika' style="width:150px; height: 150px" />
+                    </div>
+                </div>
+                <h3>Citat</h3>
+                <div class="tekstObrazac2">
+                    <p class="autor">
+                        "If you don't design your own life plan, chances are you'll fall into someone else's plan. 
+                        And guess what they have planned for you? Not much." (Izvor: <a href="https://www.brainyquote.com/quotes/jim_rohn_165075">Jim Rohn</a>)
+                    </p>
+                    <h4>Rođendani</h4>
+                    <p>
+                        Rođendan je dan u godini, kada se slavi obljetnica rođenja. Slavi se u mnogim kulturama. Slavljenik za rođendan dobiva darove i organizira rođendansku proslavu. 
+                        Do 1814. godine, nije se uopće bilježio dan rođenja, nego samo dan krštenja u crkvenim maticama krštenih. 
+                        Posebno se slavi 18. rođendan, kada osoba postaje punoljetna, često uz raskošnu zabavu. Značajnije se slave i rođendani s okruglim brojem godina, a osobito 100.
+                        Rođendan, koji se često poprati i u medijima. Osobe koje su rođene 29. veljače, mogu slaviti rođendan na taj dan samo svake 4. prijestupne godine pa ga obično slave 28. veljače.
+                        (Izvor:<a href="https://hr.wikipedia.org/wiki/Ro%C4%91endan">Wikipedia</a>)
+                    </p>
+                </div>
+                <h5>Video</h5>
+                <div class="tekstObrazac3">
+                    <iframe width="1093" height="615" style="height: 615px; width: 100%" src="https://www.youtube.com/embed/d82BPHicxQQ?autoplay=1" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer class="podnozje">
+            <address>Kontakt: <a href="autor.html">Karla Medenjak</a></address>
+            <p>&copy; 2021 K.Medenjak</p>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/autor.html">
+                <img src="multimedija/CSS3.png" alt="" width="30" height="30">
+            </a>
+            <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/autor.html">
+                <img src="multimedija/HTML5.png" alt="" width="30" height="30">
+            </a>
+        </footer>
+    </body>
+</html>

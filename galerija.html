@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<html lang='hr'>
+    <head>
+        <title>Galerija</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Naslov" content="Galerija">
+        <meta name="Autor" content="Karla Medenjak">
+        <meta name="Opis" content="Galerija unutar koje se nalazi 12 slika s naslovom i obrubom, 19.03.2021.">
+        <meta name="Tri ključne riječi" content="Slike, galerija, obrub">
+        <link rel="stylesheet" href="css/kmedenjak.css" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="javascript/kmedenjak_jquery.js"></script>
+
+        <style>
+            figure:hover{
+                border: 6px #333 solid;
+                border-radius: 8px;
+            }   
+        </style>
+    </head>
+
+
+    <body>
+        <header style="text-align: center">
+            <a href="https://www.facebook.com/">
+                <img class="slikaPocetna" src="multimedija/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="slikaPocetna" src="multimedija/instagram-logo.png" alt="instagram">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/RSS">
+                <img class="slikaPocetna" src="multimedija/rss-logo.png" alt="rss">
+            </a>
+            <h1><a class="rodendan" href="#sadrzaj"> GALERIJA </a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="navigacijaLi"><a href="index.html">Početna stranica</a></li>
+                <li class="navigacijaLi"><a href="autor.html">Autor</a></li>
+                <li class="navigacijaLi"><a href="navigacijski.html">Navigacijski dijagram</a></li>
+                <li class="navigacijaLi"><a href="era.html">ERA dijagram</a></li>
+                <li class="navigacijaLi"><a href="obrasci/prijava.html">Prijava</a></li>
+                <li class="navigacijaLi"><a href="obrasci/registracija.html">Registracija</a></li>
+                <li class="navigacijaLi"><a href="obrasci/obrazac.html">Obrazac</a></li>
+            </ul>
+        </nav>
+
+        <section id="sadrzaj">
+
+            <h2 class="naslovUSadrzaju">Prikaz slika</h2>
+            <button id="gumbSlike" class="gumbSlike">Učitaj slike</button>
+            <div class="SveSlike" id="slika">
+                <figure>
+                    <img class="slike" src="multimedija/Torta1.JPG" alt="Torta1">
+                    <figcaption>Prva torta</figcaption>
+                </figure> 
+                <figure>
+                    <img class="slike" src="multimedija/Torta2.jpg" alt="Torta2">
+                    <figcaption>Druga torta</figcaption>
+                </figure>
+                <figure>
+                    <img class="slike" src="multimedija/Torta3.jpg" alt="Torta3">
+                    <figcaption>Treća torta</figcaption>
+                </figure>
+                <figure>
+                    <img class="slike" src="multimedija/Torta4.jpg" alt="Torta4">
+                    <figcaption>Četvrta torta</figcaption>
+                </figure> 
+                <figure>
+                    <img class="slike" src="multimedija/Torta5.jpg" alt="Torta5">
+                    <figcaption>Peta torta</figcaption>
+                </figure> 
+                <figure>
+                    <img class="slike" src="multimedija/Torta6.jpg" alt="Torta6">
+                    <figcaption>Šesta torta</figcaption>
+                </figure>
+                <figure>
+                    <img class="slike" src="multimedija/Torta7.jpg" alt="Torta7">
+                    <figcaption>Sedma torta</figcaption>
+                </figure>
+                <figure>
+                    <img class="slike" src="multimedija/Torta8.JPG" alt="Torta8">
+                    <figcaption>Osma torta</figcaption>
+                </figure> 
+                <figure>
+                    <img class="slike" src="multimedija/Torta9.jpg" alt="Torta9">
+                    <figcaption>Deveta torta</figcaption>
+                </figure> 
+                <figure>
+                    <img class="slike" src="multimedija/Torta10.jpg" alt="Torta10">
+                    <figcaption>Deseta torta</figcaption>
+                </figure> 
+                <figure>
+                    <img class="slike" src="multimedija/Torta11.jpeg" alt="Torta11">
+                    <figcaption>Jedanaesta torta</figcaption>
+                </figure> 
+                <figure>
+                    <img class="slike" src="multimedija/Torta12.jpg" alt="Torta12">
+                    <figcaption>Devanaesta torta</figcaption>
+                </figure> 
+            </div>
+            <div id="galSlike" style="display: flex; flex-wrap: wrap; overflow-x: auto; overflow-y: auto">
+            </div>
+        </section>
+        <br>
+
+        <footer class="podnozje">
+            <address>Kontakt: <a href="autor.html">Karla Medenjak</a></address>
+            <p>&copy; 2021 K.Medenjak</p>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/galerija.html">
+                <img src="multimedija/CSS3.png" alt="" width="30" height="30">
+            </a>
+            <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/galerija.html">
+                <img src="multimedija/HTML5.png" alt="" width="30" height="30">
+            </a>
+        </footer>
+    </body>
+</html>

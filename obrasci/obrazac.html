@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang='hr'>
+    <head>
+        <title>Obrazac</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Naslov" content="Obrazac">
+        <meta name="Autor" content="Karla Medenjak">
+        <meta name="Opis" content="Obrazac na koji korisnik unosi tražene podatke, 19.03.2021.">
+        <meta name="Tri ključne riječi" content="Podaci, ispunjavanje, prosljeđivanje">
+        <link rel="stylesheet" href="../css/kmedenjak.css" type="text/css" id="prvaTema"/>
+        <script src="../javascript/kmedenjak.js"></script>
+    </head>
+    <body>
+        <header style="text-align: center">
+            <a href="https://www.facebook.com/">
+                <img class="slikaPocetna" src="../multimedija/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="slikaPocetna" src="../multimedija/instagram-logo.png" alt="instagram">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/RSS">
+                <img class="slikaPocetna" src="../multimedija/rss-logo.png" alt="rss">
+            </a>
+            <h1><a class="rodendan" href="#sadrzaj"> OBRAZAC </a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="navigacijaLi"><a href="../index.html">Početna stranica</a></li>
+                <li class="navigacijaLi"><a href="../autor.html">Autor</a></li>
+                <li class="navigacijaLi"><a href="../navigacijski.html">Navigacijski dijagram</a></li>
+                <li class="navigacijaLi"><a href="../era.html">ERA dijagram</a></li>
+                <li class="navigacijaLi"><a href="../galerija.html">Galerija</a></li>
+                <li class="navigacijaLi"><a href="prijava.html">Prijava</a></li>
+                <li class="navigacijaLi"><a href="registracija.html">Registracija</a></li>
+            </ul>
+        </nav>
+
+        <section id="sadrzaj">
+            <img class="slikaPocetna" id="ikonaTeme" src="../multimedija/ikonaPristupacnosti.png" alt="ikona">
+            <h2 class="naslovUSadrzaju">Obrazac</h2>
+
+
+            <div class="polozajObrazac">
+                <div class="obrubObrazac">
+                    <form novalidate id="obrazac" class="obrazacForma" name="obrazac" method="post" action="http://barka.foi.hr/WebDiP/2020/materijali/zadace/ispis_forme.php">
+                        <canvas id="pravokutnik" width = "400" height= "40">
+                        </canvas>
+                        <fieldset>
+                            <legend style="font-size: 30px; font-style: italic;">Osnovni podaci:</legend>
+                            <br>
+                            <label for="datum" id="labela">Datum: </label>
+                            <input class="formaInput" name="datum" id="datum" type="text"/>
+                            <span id="greske" style="color: red;"></span>
+                            <br> <br>
+
+                            <canvas id="pravokutnik2" width = "400" height= "40">
+                            </canvas>
+                            <label for="vrijeme" id="labela1">Vrijeme: </label>
+                            <input class="formaInput" name="vrijeme" id="vrijeme" type="time"/>
+                            <br> <br>
+
+                            <canvas id="pravokutnik3" width = "400" height= "40">
+                            </canvas>
+                            <label for="telefonskiBroj" id="labela3">Telefonski broj: </label>
+                            <input class="formaInput" type="tel" id="telefonskiBroj" name="telefonskiBroj"/>
+                            <br> <br>
+
+                            <label id="labela4">Odaberite grupu:</label>
+                            <br>
+                            <input type="radio" name="rodendan" id="grupa1"/>
+                            <label for="grupa1"> Grupa 1 (3-4) </label>
+                            <br>
+                            <input type="radio" name="rodendan" id="grupa2"/>
+                            <label for="grupa2"> Grupa 2 (5-6) </label>
+                            <br>
+                            <input type="radio" name="rodendan" id="grupa3"/>
+                            <label for="grupa3"> Grupa 3 (7-8) </label>
+                            <br>
+                            <input type="radio" name="rodendan" id="grupa4"/>
+                            <label for="grupa4"> Grupa 4 (9-10) </label>
+                            <br>
+                            <input type="radio" name="rodendan" id="grupa5"/>
+                            <label for="grupa5"> Grupa 5 (11-12) </label>
+                            <br>
+                            <input type="radio" name="rodendan" id="grupa6"/>
+                            <label for="grupa6" > Grupa 6(13-14) </label>
+                            <br>
+                            <input type="radio" name="rodendan" id="grupa7"/>
+                            <label for="grupa7" > Grupa 7(15-16) </label>
+                            <br>
+                            <input type="radio" name="rodendan" id="grupa8"/>
+                            <label for="grupa8" > Grupa 8(17-20) </label>
+                        </fieldset>
+                        <br>
+                        <br>
+
+                        <fieldset>
+                            <legend style="font-size: 30px; font-style: italic;">Dodatni podaci:</legend>
+                            <br>
+                            <canvas id="pravokutnik4" width = "400" height= "40">
+                            </canvas>
+                            <label for="odabirDodataka" id="labela2"> Odaberite koje dodatke želite na rođendanu: </label>
+                            <br>
+                            <select id="odabirDodataka" name="odabirDodataka[]" multiple style="width: 300px; height: 80px">
+                                <optgroup label="Dodatni sadržaji: ">
+                                    <option value = "0"> Trampolin </option>
+                                    <option value = "1"> Kućica na napuhavanje </option>
+                                    <option value = "2"> Glumac </option>
+                                    <option value = "3"> Kostimi </option>
+                                </optgroup>
+                                <optgroup label="Prehrana: ">
+                                    <option value = "4"> Torta </option>
+                                    <option value = "5"> Grickalice </option>
+                                    <option value = "6"> Hrana </option>
+                                </optgroup>
+                            </select> <br>
+                            <br> <br>
+
+                            <label id="labela5" for="dodatniOpis"> Napišite ako želite neku dodatnu pogodnost: </label>
+                            <br>
+                            <textarea id="dodatniOpis" name="dodatniOpis" style="width: 300px; height: 150px"></textarea>
+                            <br> <br>
+
+                            <label id="labela6" for="urlStranice">Stavite link ako želite nešto slično:</label>
+                            <input class="formaInput" type="url" id="urlStranice" name="urlStranice"/>
+                            <br> <br>
+
+                            <label id="labela7" for="bojaTematike">Odaberite boju tematike: </label>
+                            <input type="color" id="bojaTematike" name="bojaTematike"/>
+                        </fieldset>
+                        <input class="gumb" id="gumbPosalji" name="submit" type="submit" value="Pošalji"/>
+                        <input class="gumb" name="reset" type="reset" value="Osvježi" />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="podnozje">
+            <address>Kontakt: <a href="../autor.html">Karla Medenjak</a></address>
+            <p>&copy; 2021 K.Medenjak</p>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/obrasci/obrazac.html">
+                <img src="../multimedija/CSS3.png" alt="" width="30" height="30">
+            </a>
+            <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2020/zadaca_03/kmedenjak/obrasci/obrazac.html">
+                <img src="../multimedija/HTML5.png" alt="" width="30" height="30">
+            </a>
+        </footer>
+
+    </body>
+</html>

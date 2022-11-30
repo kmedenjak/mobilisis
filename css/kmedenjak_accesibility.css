@@ -1,0 +1,188 @@
+@media only screen and (min-width: 364px) and (max-width: 1400px){
+    .rodendan{
+        width: 100%;
+        color: #333;
+        text-decoration: none;
+        font-family: Arial;
+    }
+
+    .rodendan:hover{
+        background-color: white;
+        color: #93af85;
+    }
+
+    nav > ul li {
+        width: 100%;
+        background-color: #ccc;
+        color: #333;
+    }
+    .navigacijaLi >  a {
+        display: block;
+        text-align: center;
+        background-color: #ccc;
+        color: #333;
+        font-family: Comic Sans;
+    }
+
+    .navigacijaLi > a:hover{
+        background-color: #333;
+        color: white;
+    }
+    
+    .podnozje{
+        background-color: #f1f1f1;
+        color: #333;
+    }
+}
+
+
+label{
+    color: black;
+    font-family: Arial;
+    letter-spacing: 8px;
+    word-spacing: 15px;
+    line-height: 30px;
+}
+
+.polozajObrazac{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.obrubObrazac{
+    width: 500px;
+    height: 1550px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #f1f1f1;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.obrazacForma{
+    margin: 10px;
+    padding: 30px;
+}
+
+.gumb{
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    padding: 10px;
+    width: 120px;
+    margin-top: 20px;
+    float: right;
+    margin: 7px;
+    border-radius: 6px;
+    font-family: Arial;
+    letter-spacing: 8px;
+    word-spacing: 28px;
+    line-height: 30px;
+}
+
+.formaInput{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #333;
+    background-color: #f2f2f2;
+}
+
+
+#pravokutnik{
+    border:1px solid #d3d3d3; 
+    background-color: white; 
+    position: absolute;
+}
+#pravokutnik2{
+    border:1px solid #d3d3d3; 
+    background-color: white; 
+    position: absolute;
+}
+#pravokutnik3{
+    border:1px solid #d3d3d3; 
+    background-color: white; 
+    position: absolute;
+}
+#pravokutnik4{
+    border:1px solid #d3d3d3; 
+    background-color: white; 
+    position: absolute;
+}
+
+h2{
+    font-size: 60px;
+    font-family: Arial;
+    letter-spacing: 8px;
+    word-spacing: 28px;
+    line-height: 30px;
+    color: #333;
+}
+
+.slikaPocetna{
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    float: right;
+    padding: 2px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #ccc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Arial;
+    letter-spacing: 1.5px;
+    word-spacing: 28px;
+}
+
+li a:hover{
+    background-color: white;
+    color: #333;
+}
+
+h1 > a{
+    color: #333;
+    text-decoration: none;
+    font-size: 80px;
+    letter-spacing: 4px;
+}
+
+h1 > a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #333;
+}
+
+p{
+    width: 100%;
+    font-size: 19px;
+    font-family: Arial;
+    letter-spacing: 1.5px;
+    word-spacing: 28px;
+    line-height: 30px;
+}
+
+.podnozje{
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+}
